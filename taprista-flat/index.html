@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taprista — Fresh Coffee. Great Conversations. | Manewada, Nagpur</title>
+  <meta name="description" content="Taprista is a cozy vegetarian café in Manewada, Nagpur serving fresh coffee, tea, sandwiches, pizza bites, garlic bread and snacks. Open daily 8AM–9PM. Come, sit a while.">
+  <meta name="keywords" content="Taprista, cafe in Nagpur, Manewada cafe, coffee shop Nagpur, vegetarian cafe, tea cafe Nagpur">
+  <meta name="author" content="Taprista">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Taprista — Fresh Coffee. Great Conversations.">
+  <meta property="og:description" content="A cozy vegetarian café in Manewada, Nagpur. Coffee, tea, sandwiches, pizza bites & good company.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://picsum.photos/seed/taprista-hero/1200/630">
+
+  <!-- Favicon (placeholder – replace with real favicon) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☕</text></svg>">
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Google Fonts: Fraunces (display/serif) + Manrope (body/utility) -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ LOADER ============ -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__mark">
+      <span class="loader__cup">
+        <svg viewBox="0 0 64 64" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M12 26h34v16a12 12 0 0 1-12 12H24a12 12 0 0 1-12-12V26Z"/>
+          <path d="M46 30h4a6 6 0 0 1 0 12h-4"/>
+          <path class="loader__steam s1" d="M22 20c-3-4 3-6 0-11"/>
+          <path class="loader__steam s2" d="M31 20c-3-4 3-6 0-11"/>
+          <path class="loader__steam s3" d="M40 20c-3-4 3-6 0-11"/>
+        </svg>
+      </span>
+      <span class="loader__word">Taprista</span>
+    </div>
+  </div>
+
+  <!-- ============ SCROLL PROGRESS ============ -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav" id="siteNav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__logo" aria-label="Taprista home">
+        <span class="nav__logo-mark">☕</span>
+        <span class="nav__logo-text">Tap<em>rista</em></span>
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#love">Why Taprista</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#visit">Visit Us</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact" class="nav__cta">Contact</a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero__media">
+        <img src="storefront-night.jpg" alt="Taprista café storefront lit up at night in Manewada, Nagpur" loading="eager">
+        <div class="hero__scrim"></div>
+        <div class="hero__grain" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero__content">
+        <p class="eyebrow reveal-up">Manewada &middot; Nagpur</p>
+        <h1 class="hero__headline reveal-up">
+          <span class="hero__line">Fresh Coffee.</span>
+          <span class="hero__line hero__line--accent">Great Conversations.</span>
+        </h1>
+        <p class="hero__desc reveal-up">
+          A small tapri-turned-café pouring honest coffee, warm chai and good company —
+          made for lingering over one more cup, one more story.
+        </p>
+        <div class="hero__actions reveal-up">
+          <a href="#menu" class="btn btn--primary">
+            <span>View Menu</span>
+            <i class="fa-solid fa-mug-hot" aria-hidden="true"></i>
+          </a>
+          <a href="#visit" class="btn btn--ghost">
+            <span>Visit Us</span>
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__steam" aria-hidden="true">
+        <svg viewBox="0 0 120 200" width="70" height="120">
+          <path class="steam-path s1" d="M20 190c-12-18 14-28 2-46s14-28 2-46s14-28 2-46"/>
+          <path class="steam-path s2" d="M60 190c-12-18 14-28 2-46s14-28 2-46s14-28 2-46"/>
+          <path class="steam-path s3" d="M100 190c-12-18 14-28 2-46s14-28 2-46s14-28 2-46"/>
+        </svg>
+      </div>
+
+      <a href="#about" class="hero__scroll-cue" aria-label="Scroll to next section">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about" id="about">
+      <div class="section-inner about__grid">
+        <div class="about__media reveal-up">
+          <img src="interior-wide-1.jpg" alt="Taprista café seating area with bamboo walls and warm hanging lights" loading="lazy">
+          <div class="about__media-card">
+            <span class="about__media-card-num">₹1–200</span>
+            <span class="about__media-card-label">per person, no drama</span>
+          </div>
+        </div>
+
+        <div class="about__copy">
+          <p class="eyebrow reveal-up">Our Story</p>
+          <h2 class="reveal-up">From tapri roots to a café worth sitting in</h2>
+          <p class="reveal-up">
+            Taprista began with a simple idea: keep the honesty of a roadside tapri —
+            strong tea, unhurried conversation, a place that doesn't ask you to leave —
+            and pair it with the comfort of a proper café. Tucked into Mahalaxmi Nagar
+            in Manewada, it's a compact, 100% vegetarian space where students spread
+            out their notes, friends linger over cold coffee, and professionals take
+            calls between sips.
+          </p>
+          <p class="reveal-up">
+            Everything on the menu is made fresh, kept simple, and priced so that
+            "let's grab a coffee" never needs a second thought.
+          </p>
+
+          <div class="about__stats reveal-up">
+            <div class="stat">
+              <span class="stat__num" data-count="8" data-suffix="AM">0</span>
+              <span class="stat__label">Opens Daily</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num" data-count="7" data-suffix="/7">0</span>
+              <span class="stat__label">Days a Week</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num" data-count="10" data-suffix="+">0</span>
+              <span class="stat__label">Menu Categories</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num" data-count="100" data-suffix="%">0</span>
+              <span class="stat__label">Vegetarian</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY PEOPLE LOVE TAPRISTA ============ -->
+    <section class="love" id="love">
+      <div class="section-inner">
+        <div class="section-head">
+          <p class="eyebrow reveal-up">The Little Things</p>
+          <h2 class="reveal-up">Why people love Taprista</h2>
+        </div>
+
+        <div class="love__grid">
+          <article class="love-card reveal-up">
+            <div class="love-card__icon"><i class="fa-solid fa-mug-saucer"></i></div>
+            <h3>Freshly Brewed, Always</h3>
+            <p>Every cup of coffee and pot of chai is made to order — nothing sits, nothing is rushed.</p>
+          </article>
+
+          <article class="love-card reveal-up">
+            <div class="love-card__icon"><i class="fa-solid fa-leaf"></i></div>
+            <h3>100% Vegetarian</h3>
+            <p>A fully vegetarian kitchen, so everyone at the table can order without a second thought.</p>
+          </article>
+
+          <article class="love-card reveal-up">
+            <div class="love-card__icon"><i class="fa-solid fa-wallet"></i></div>
+            <h3>Honest Pricing</h3>
+            <p>Quality food and drinks for ₹1–200 a head — good coffee shouldn't be a special occasion.</p>
+          </article>
+
+          <article class="love-card reveal-up">
+            <div class="love-card__icon"><i class="fa-solid fa-book-open"></i></div>
+            <h3>Made for Lingering</h3>
+            <p>Study, work, catch up — nobody's rushing you out. Stay as long as the conversation lasts.</p>
+          </article>
+
+          <article class="love-card reveal-up">
+            <div class="love-card__icon"><i class="fa-solid fa-house-chimney"></i></div>
+            <h3>Small &amp; Cozy</h3>
+            <p>A compact, warmly-lit space in Manewada with a neighbourhood feel — regulars become family.</p>
+          </article>
+
+          <article class="love-card reveal-up">
+            <div class="love-card__icon"><i class="fa-solid fa-clock"></i></div>
+            <h3>Open Every Single Day</h3>
+            <p>8 AM to 9 PM, seven days a week. Whenever the craving hits, Taprista's open.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURED MENU ============ -->
+    <section class="menu" id="menu">
+      <div class="section-inner">
+        <div class="section-head">
+          <p class="eyebrow reveal-up">Fresh Off the Counter</p>
+          <h2 class="reveal-up">The Taprista Menu</h2>
+          <p class="section-sub reveal-up">A little bit of everything — pick your category, or see it all.</p>
+        </div>
+
+        <!-- Menu Filters -->
+        <div class="menu__filters reveal-up" role="tablist" aria-label="Filter menu by category">
+          <button class="filter-btn is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter-btn" data-filter="chai" role="tab" aria-selected="false">Chai</button>
+          <button class="filter-btn" data-filter="coffee" role="tab" aria-selected="false">Coffee</button>
+          <button class="filter-btn" data-filter="cold-beverage" role="tab" aria-selected="false">Cold Beverage</button>
+          <button class="filter-btn" data-filter="shakes" role="tab" aria-selected="false">Shakes</button>
+          <button class="filter-btn" data-filter="bun-bread" role="tab" aria-selected="false">Bun &amp; Bread</button>
+          <button class="filter-btn" data-filter="vadapav" role="tab" aria-selected="false">Vada Pav</button>
+          <button class="filter-btn" data-filter="sandwich" role="tab" aria-selected="false">Sandwich</button>
+          <button class="filter-btn" data-filter="maggi" role="tab" aria-selected="false">Maggi</button>
+          <button class="filter-btn" data-filter="fries" role="tab" aria-selected="false">Fries</button>
+          <button class="filter-btn" data-filter="burger-pizza" role="tab" aria-selected="false">Burger &amp; Pizza</button>
+          <button class="filter-btn" data-filter="desserts" role="tab" aria-selected="false">Desserts</button>
+        </div>
+        <p class="menu__note reveal-up">Straight off Taprista's own menu board — double-check exact prices against the counter before printing anywhere official.</p>
+
+        <!-- Menu Grid -->
+        <div class="menu__grid" id="menuGrid">
+
+          <article class="menu-card" data-category="chai">
+            <div class="menu-card__img"><img src="https://picsum.photos/seed/taprista-adrak/500/500" alt="Adrak chai in a kulhad" loading="lazy"></div>
+            <div class="menu-card__body">
+              <div class="menu-card__top"><h3>Adrak Chai</h3><span class="tag">Chai</span></div>
+              <p>Ginger-spiced, strong, and brewed the tapri way.</p>
+              <span class="menu-card__price">₹15</span>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="chai">
+            <div class="menu-card__img"><img src="https://picsum.photos/seed/taprista-elaichi/500/500" alt="Elaichi chai" loading="lazy"></div>
+            <div class="menu-card__body">
+              <div class="menu-card__top"><h3>Elaichi Chai</h3><span class="tag">Chai</span></div>
+              <p>Cardamom-forward and comforting, cup after cup.</p>
+              <span class="menu-card__price">₹15</span>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="chai">
+            <div class="menu-card__img"><img src="https://picsum.photos/seed/taprista-kulhad/500/500" alt="Kulhad chai in a clay cup" loading="lazy"></div>
+            <div class="menu-card__body">
+              <div class="menu-card__top"><h3>Kulhad Chai</h3><span class="tag">Chai</span></div>
+              <p>Served in a clay cup for that extra earthy note.</p>
+              <span class="menu-card__price">₹20</span>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="coffee">
+            <div class="menu-card__img"><img src="https://picsum.photos/seed/taprista-blackcoffee/500/500" alt="Black coffee in a glass" loading="lazy"></div>
+            <div class="menu-card__body">
+              <div class="menu-card__top"><h3>Black Coffee</h3><span class="tag">Coffee</span></div>
+              <p>No milk, no fuss — just coffee doing its job.</p>
+              <span class="menu-card__price">₹20</span>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="coffee">
+            <div class="menu-card__img"><img src="food-coffee-stock.jpg" alt="Cappuccino with latte art" loading="lazy"></div>
+            <div class="menu-card__body">
+              <div class="menu-card__top"><h3>Cappuccino</h3><span class="tag">Coffee</span></div>
+              <p>Espresso, steamed milk, a whisper of foam.</p>
+              <span class="menu-card__price">₹50</span>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="cold-beverage">
+            <div class="menu-card__img"><img src="https://picsum.photos/seed/taprista-coldcoffee/500/500" alt="Iced cold coffee with whipped cream" loading="lazy"></div>
+            <div class="menu-card__body">
+              <div class="menu-card__top"><h3>Cold Coffee</h3><span class="tag">Cold Beverage</span></div>
+              <p>Chilled, blended, the counter's most-ordered drink.</p>
+              <span class="menu-card__price">₹60</span>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="cold-beverage">
+            <div class="menu-card__img"><img src="https://picsum.photos/seed/taprista-coldcoffeeicecream/500/500" alt="Cold coffee with ice cream" loading="lazy"></div>
+            <div class="menu-card__body">
+              <div class="menu-card__top"><h3>Cold Coffee with Ice Cream</h3><span class="tag">Cold Beverage</span></div>
+              <p>The classic, topped with a proper scoop.</p>
+              <span class="menu-card__price">₹90</span>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="shakes">
+            <div class="menu-card__img"><img src="https://picsum.photos/seed/taprista-oreo/500/500" alt="Oreo milkshake in a tall glass" loading="lazy"></div>
+            <div class="menu-card__body">
+              <div class="menu-card__top"><h3>Oreo Shake</h3><span class="tag">Shakes</span></div>
+              <p>Thick, cookie-loaded, and properly indulgent.</p>
+              <span class="menu-card__price">₹80</span>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="shakes">
+            <div class="menu-card__img"><img src="https://picsum.photos/seed/taprista-brownieshake/500/500" alt="Chocolate brownie shake" loading="lazy"></div>
+            <div class="menu-card__body">
+              <div class="menu-card__top"><h3>Choc. Brownie Shake</h3><span class="tag">Shakes</span></div>
+              <p>Blended brownie chunks, chocolate all the way down.</p>
+              <span class="menu-card__price">₹90</span>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="bun-bread">
+            <div class="menu-card__img"><img src="https://picsum.photos/seed/taprista-bunmaska/500/500" alt="Bun maska with butter" loading="lazy"></div>
+            <div class="menu-card__body">
+              <div class="menu-card__top"><h3>Bun Maska</h3><span class="tag">Bun &amp; Bread</span></div>
+              <p>Soft bun, generous butter — a tapri classic.</p>
+              <span class="menu-card__price">₹15</span>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="vadapav">
+            <div class="menu-card__img"><img src="food-vadapav-stock.jpg" alt="Loaded cheese vada pav" loading="lazy"></div>
+            <div class="menu-card__body">
+              <div class="menu-card__top"><h3>Crispy Vadapav</h3><span class="tag">Vada Pav</span></div>
+              <p>Crunchy, spiced, and gone in three bites.</p>
+              <span class="menu-card__price">₹39</span>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="vadapav">
+            <div class="menu-card__img"><img src="https://picsum.photos/seed/taprista-schezwanvp/500/500" alt="Schezwan vada pav" loading="lazy"></div>
+            <div class="menu-card__body">
+              <div class="menu-card__top"><h3>Schezwan Vadapav</h3><span class="tag">Vada Pav</span></div>
+              <p>The classic with a fiery schezwan kick.</p>
+              <span class="menu-card__price">₹45</span>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="sandwich">
+            <div class="menu-card__img"><img src="https://picsum.photos/seed/taprista-sandwich/500/500" alt="Grilled veg cheese sandwich" loading="lazy"></div>
+            <div class="menu-card__body">
+              <div class="menu-card__top"><h3>Veg Cheese Sandwich</h3><span class="tag">Sandwich</span></div>
+              <p>Grilled, gooey, and a certified regulars' favourite.</p>
+              <span class="menu-card__price">₹60</span>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="maggi">
+            <div class="menu-card__img"><img src="https://picsum.photos/seed/taprista-maggi/500/500" alt="Bowl of classic maggi noodles" loading="lazy"></div>
+            <div class="menu-card__body">
+              <div class="menu-card__top"><h3>Classic Maggi</h3><span class="tag">Maggi</span></div>
+              <p>The comfort-food constant, done simple.</p>
+              <span class="menu-card__price">₹59</span>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="maggi">
+            <div class="menu-card__img"><img src="https://picsum.photos/seed/taprista-cheesecornmaggi/500/500" alt="Cheese corn maggi" loading="lazy"></div>
+            <div class="menu-card__body">
+              <div class="menu-card__top"><h3>Cheese Corn Maggi</h3><span class="tag">Maggi</span></div>
+              <p>Loaded with corn and melted cheese.</p>
+              <span class="menu-card__price">₹89</span>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="fries">
+            <div class="menu-card__img"><img src="https://picsum.photos/seed/taprista-perifries/500/500" alt="Peri peri French fries" loading="lazy"></div>
+            <div class="menu-card__body">
+              <div class="menu-card__top"><h3>Peri Peri Fries</h3><span class="tag">Fries</span></div>
+              <p>Crisp, spiced, gone before you know it.</p>
+              <span class="menu-card__price">₹79</span>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="burger-pizza">
+            <div class="menu-card__img"><img src="food-pizza-stock.jpg" alt="Kulhad pizza fresh from the oven" loading="lazy"></div>
+            <div class="menu-card__body">
+              <div class="menu-card__top"><h3>Kulhad Pizza</h3><span class="tag">Burger &amp; Pizza</span></div>
+              <p>Taprista's own spin — pizza served in a clay pot.</p>
+              <span class="menu-card__price">₹79</span>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="desserts">
+            <div class="menu-card__img"><img src="https://picsum.photos/seed/taprista-lavacake/500/500" alt="Warm choco lava cake" loading="lazy"></div>
+            <div class="menu-card__body">
+              <div class="menu-card__top"><h3>Choco Lava Cake</h3><span class="tag">Desserts</span></div>
+              <p>Warm, gooey centre — the perfect way to end.</p>
+              <span class="menu-card__price">₹60</span>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="menu__empty" id="menuEmpty" hidden>No items in this category yet — check back soon.</p>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="gallery" id="gallery">
+      <div class="section-inner">
+        <div class="section-head">
+          <p class="eyebrow reveal-up">A Peek Inside</p>
+          <h2 class="reveal-up">Gallery</h2>
+          <p class="section-sub reveal-up">Moments from the counter, the corner table, and everything brewing in between.</p>
+        </div>
+
+        <div class="gallery__grid" id="galleryGrid">
+          <!-- Real Taprista photography. Food shots (pizza & vada pav) are stock placeholders — swap for real dish photos when available. -->
+          <button class="gallery__item" data-full="storefront-menu-hand.jpg" aria-label="Open image 1">
+            <img src="storefront-menu-hand.jpg" alt="Fresh cup at the Taprista counter with the menu board behind" loading="lazy">
+          </button>
+          <button class="gallery__item" data-full="interior-wide-2.jpg" aria-label="Open image 2">
+            <img src="interior-wide-2.jpg" alt="Cozy seating corner at Taprista with bamboo walls" loading="lazy">
+          </button>
+          <button class="gallery__item" data-full="food-pizza-stock.jpg" aria-label="Open image 3">
+            <img src="food-pizza-stock.jpg" alt="Cheesy pizza fresh from the kitchen" loading="lazy">
+          </button>
+          <button class="gallery__item" data-full="lamp-plants-wide.jpg" aria-label="Open image 4">
+            <img src="lamp-plants-wide.jpg" alt="Bamboo pendant lamps and hanging plants at Taprista" loading="lazy">
+          </button>
+          <button class="gallery__item" data-full="food-coffee-stock.jpg" aria-label="Open image 5">
+            <img src="food-coffee-stock.jpg" alt="Coffee with latte art" loading="lazy">
+          </button>
+          <button class="gallery__item" data-full="wooden-sign.jpg" aria-label="Open image 6">
+            <img src="wooden-sign.jpg" alt="Handcrafted wooden Taprista signage" loading="lazy">
+          </button>
+          <button class="gallery__item" data-full="interior-seating.jpg" aria-label="Open image 7">
+            <img src="interior-seating.jpg" alt="Seating nook at Taprista café" loading="lazy">
+          </button>
+          <button class="gallery__item" data-full="food-vadapav-stock.jpg" aria-label="Open image 8">
+            <img src="food-vadapav-stock.jpg" alt="Loaded cheese vada pav" loading="lazy">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Image viewer">
+      <button class="lightbox__close" id="lightboxClose" aria-label="Close image viewer"><i class="fa-solid fa-xmark"></i></button>
+      <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Previous image"><i class="fa-solid fa-chevron-left"></i></button>
+      <img src="" alt="" id="lightboxImg">
+      <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Next image"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+    <!-- ============ CUSTOMER REVIEWS ============ -->
+    <section class="reviews" id="reviews">
+      <div class="section-inner">
+        <div class="section-head section-head--light">
+          <p class="eyebrow eyebrow--light reveal-up">Kind Words</p>
+          <h2 class="reveal-up">What guests are saying</h2>
+        </div>
+
+        <div class="reviews__grid">
+          <blockquote class="review-card reveal-up">
+            <i class="fa-solid fa-quote-left review-card__mark" aria-hidden="true"></i>
+            <p>"The food and coffee were fresh and tasty, making it a perfect place to relax."</p>
+            <footer>
+              <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+              <cite>Google Review</cite>
+            </footer>
+          </blockquote>
+
+          <blockquote class="review-card reveal-up">
+            <i class="fa-solid fa-quote-left review-card__mark" aria-hidden="true"></i>
+            <p>"Had a veg cheese sandwich at a very affordable price."</p>
+            <footer>
+              <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+              <cite>Google Review</cite>
+            </footer>
+          </blockquote>
+
+          <blockquote class="review-card reveal-up">
+            <i class="fa-solid fa-quote-left review-card__mark" aria-hidden="true"></i>
+            <p>"Small place but amazing vibe."</p>
+            <footer>
+              <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+              <cite>Google Review</cite>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VISIT US ============ -->
+    <section class="visit" id="visit">
+      <div class="section-inner">
+        <div class="section-head">
+          <p class="eyebrow reveal-up">Find Us</p>
+          <h2 class="reveal-up">Visit Taprista</h2>
+        </div>
+
+        <div class="visit__grid">
+          <div class="visit__map reveal-up">
+            <iframe
+              title="Taprista location map"
+              src="https://www.google.com/maps?q=Mahalaxmi%20Nagar%2C%20Ambika%20Nagar%2C%20Manewada%2C%20Nagpur%2C%20Maharashtra%20440035&output=embed"
+              width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+
+          <div class="visit__card reveal-up">
+            <h3>Taprista</h3>
+            <ul class="visit__list">
+              <li>
+                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                <span>Shop No. 2, Mahalaxmi Nagar, Ambika Nagar, Manewada, Nagpur, Maharashtra 440035</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-clock" aria-hidden="true"></i>
+                <span>Open every day &middot; 8:00 AM – 9:00 PM</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                <a href="tel:+918766673750">+91 87666 73750</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-indian-rupee-sign" aria-hidden="true"></i>
+                <span>₹1–200 per person</span>
+              </li>
+            </ul>
+            <a class="btn btn--primary btn--block" href="https://www.google.com/maps?q=Mahalaxmi%20Nagar%2C%20Ambika%20Nagar%2C%20Manewada%2C%20Nagpur%2C%20Maharashtra%20440035" target="_blank" rel="noopener">
+              <span>Get Directions</span>
+              <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INSTAGRAM ============ -->
+    <section class="instagram">
+      <div class="section-inner">
+        <div class="section-head">
+          <p class="eyebrow reveal-up">@taprista.cafe</p>
+          <h2 class="reveal-up">Follow along</h2>
+        </div>
+        <div class="instagram__grid">
+          <!-- Swap these for a live Instagram feed embed once the café's handle is confirmed -->
+          <a class="instagram__item reveal-up" href="#" target="_blank" rel="noopener" aria-label="View on Instagram">
+            <img src="hanging-plants-lights.jpg" alt="Hanging plants and fairy lights at Taprista" loading="lazy">
+            <span class="instagram__overlay"><i class="fa-brands fa-instagram"></i></span>
+          </a>
+          <a class="instagram__item reveal-up" href="#" target="_blank" rel="noopener" aria-label="View on Instagram">
+            <img src="plant-closeup.jpg" alt="Potted plant detail at Taprista" loading="lazy">
+            <span class="instagram__overlay"><i class="fa-brands fa-instagram"></i></span>
+          </a>
+          <a class="instagram__item reveal-up" href="#" target="_blank" rel="noopener" aria-label="View on Instagram">
+            <img src="lamp-closeup.jpg" alt="Bamboo pendant lamp close-up" loading="lazy">
+            <span class="instagram__overlay"><i class="fa-brands fa-instagram"></i></span>
+          </a>
+          <a class="instagram__item reveal-up" href="#" target="_blank" rel="noopener" aria-label="View on Instagram">
+            <img src="interior-wide-1.jpg" alt="Taprista seating area" loading="lazy">
+            <span class="instagram__overlay"><i class="fa-brands fa-instagram"></i></span>
+          </a>
+          <a class="instagram__item reveal-up" href="#" target="_blank" rel="noopener" aria-label="View on Instagram">
+            <img src="storefront-menu-hand.jpg" alt="Fresh cup at the Taprista counter" loading="lazy">
+            <span class="instagram__overlay"><i class="fa-brands fa-instagram"></i></span>
+          </a>
+          <a class="instagram__item reveal-up" href="#" target="_blank" rel="noopener" aria-label="View on Instagram">
+            <img src="wooden-sign.jpg" alt="Handcrafted Taprista signage" loading="lazy">
+            <span class="instagram__overlay"><i class="fa-brands fa-instagram"></i></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="faq" id="faq">
+      <div class="section-inner section-inner--narrow">
+        <div class="section-head">
+          <p class="eyebrow reveal-up">Good to Know</p>
+          <h2 class="reveal-up">Frequently asked questions</h2>
+        </div>
+
+        <div class="faq__list">
+          <div class="faq-item reveal-up">
+            <button class="faq-item__q" aria-expanded="false">
+              <span>Is Taprista fully vegetarian?</span>
+              <i class="fa-solid fa-plus" aria-hidden="true"></i>
+            </button>
+            <div class="faq-item__a">
+              <p>Yes — the entire kitchen is 100% vegetarian, from the coffee counter to the snack menu.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal-up">
+            <button class="faq-item__q" aria-expanded="false">
+              <span>Do you take table reservations?</span>
+              <i class="fa-solid fa-plus" aria-hidden="true"></i>
+            </button>
+            <div class="faq-item__a">
+              <p>Taprista is a walk-in café — just drop by. For larger groups, a quick call ahead helps us keep a table ready.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal-up">
+            <button class="faq-item__q" aria-expanded="false">
+              <span>Is there space to sit and work or study?</span>
+              <i class="fa-solid fa-plus" aria-hidden="true"></i>
+            </button>
+            <div class="faq-item__a">
+              <p>Absolutely. Many of our regulars come in with laptops and notebooks — stay as long as you like.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal-up">
+            <button class="faq-item__q" aria-expanded="false">
+              <span>What are your operating hours?</span>
+              <i class="fa-solid fa-plus" aria-hidden="true"></i>
+            </button>
+            <div class="faq-item__a">
+              <p>We're open every day of the week from 8:00 AM to 9:00 PM.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal-up">
+            <button class="faq-item__q" aria-expanded="false">
+              <span>Do you offer takeaway or delivery?</span>
+              <i class="fa-solid fa-plus" aria-hidden="true"></i>
+            </button>
+            <div class="faq-item__a">
+              <p>Takeaway is available at the counter. Call us on +91 87666 73750 to check current delivery options.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA BAND ============ -->
+    <section class="cta-band">
+      <div class="section-inner cta-band__inner reveal-up">
+        <h2>Your next favourite cup is waiting.</h2>
+        <p>Manewada's coziest corner for coffee, chai, and everything in between.</p>
+        <div class="cta-band__actions">
+          <a href="#visit" class="btn btn--light">
+            <span>Get Directions</span>
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+          </a>
+          <a href="tel:+918766673750" class="btn btn--outline-light">
+            <span>Call Us</span>
+            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact">
+      <div class="section-inner contact__grid">
+        <div class="reveal-up">
+          <p class="eyebrow">Say Hello</p>
+          <h2>Get in touch</h2>
+          <p class="section-sub">Questions, feedback, or planning a get-together? We'd love to hear from you.</p>
+
+          <ul class="contact__details">
+            <li><i class="fa-solid fa-phone"></i><a href="tel:+918766673750">+91 87666 73750</a></li>
+            <li><i class="fa-solid fa-location-dot"></i><span>Shop No. 2, Mahalaxmi Nagar, Manewada, Nagpur 440035</span></li>
+            <li><i class="fa-solid fa-clock"></i><span>8:00 AM – 9:00 PM, every day</span></li>
+          </ul>
+
+          <div class="contact__socials">
+            <a href="#" aria-label="Taprista on Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Taprista on Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://wa.me/918766673750" aria-label="Taprista on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <form class="contact__form reveal-up" id="contactForm" novalidate>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required autocomplete="name">
+          </div>
+          <div class="form-row">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required autocomplete="tel">
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--block">
+            <span>Send Message</span>
+            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+          </button>
+          <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="section-inner footer__grid">
+      <div class="footer__brand">
+        <a href="#top" class="nav__logo nav__logo--footer">
+          <span class="nav__logo-mark">☕</span>
+          <span class="nav__logo-text">Tap<em>rista</em></span>
+        </a>
+        <p>Fresh Coffee. Great Conversations.</p>
+        <div class="contact__socials">
+          <a href="#" aria-label="Taprista on Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Taprista on Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://wa.me/918766673750" aria-label="Taprista on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <nav class="footer__col" aria-label="Site">
+        <h4>Explore</h4>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+      </nav>
+
+      <nav class="footer__col" aria-label="Info">
+        <h4>Info</h4>
+        <a href="#visit">Visit Us</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="footer__col">
+        <h4>Reach Us</h4>
+        <p>Shop No. 2, Mahalaxmi Nagar,<br>Ambika Nagar, Manewada,<br>Nagpur, Maharashtra 440035</p>
+        <a href="tel:+918766673750">+91 87666 73750</a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; <span id="year"></span> Taprista. All rights reserved.</p>
+      <p>Crafted with care in Nagpur.</p>
+    </div>
+  </footer>
+
+  <!-- ============ BACK TO TOP ============ -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
